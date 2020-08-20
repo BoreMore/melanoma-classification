@@ -16,7 +16,7 @@ Additionally, images were read from tfrecords files and converted to uint8 tenso
 Afterwards, the image data was augmented to produce variation in the training data. Only a random flip to the left or right was used. More complex image augmentation techniques may improve the model's accuracy.
 
 ## Neural Network
-Tensorflow (including the tf.keras module) was used to create a merged neural network. The Model class and Functional API of tf.keras were mainly used to create the neural network. Two neural networks were created and their outputs were merged using the Keras Concatenate layer. The first neural network that took the patient metadata in as an input consisted only of Dense layers. The second neural network was a CNN that utilized transfer learning. It used EfficientNetB5 with the weights of ImageNet. The model was primarily created and run on Kaggle notebooks.
+Tensorflow (including the tf.keras module) was used to create a merged neural network. The Model class and Functional API of tf.keras were mainly used to create the neural network. Two neural networks were created and their outputs were merged using the Keras Concatenate layer. The first neural network that took the patient metadata in as an input consisted only of Dense layers. The second neural network was a CNN that utilized transfer learning. It used EfficientNetB5 with the weights of ImageNet. The model was primarily created and ran on Kaggle notebooks.
 
 ## Evaluation
 This competition's submissions were evaluated based on AUC (area under the ROC curve). The ROC (receiver operating characteristic) curve is based on the true positive rate and false positive rate of predictions. 
