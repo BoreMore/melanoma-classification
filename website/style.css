@@ -1,0 +1,12 @@
+.required {
+    color: red;
+}
+.large-result {
+    font-size: 50px;
+    text-align: center;
+    display: none;
+
+}
+#prediction_prob {
+    font-weight: 900;
+}
