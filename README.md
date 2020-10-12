@@ -25,6 +25,9 @@ The highest AUC value possible is 1, and the lowest AUC value possible is 0. A v
 
 The competition submission associated with this model received a private score of 0.7131 (scored on 70% of the test data) and a public score of 0.7045 (scored on the other 30% of the test data).
 
+## Website
+The model is deployed on a website using jQuery and Bootstrap on the frontend and Flask on the backend to serve as an API for the machine learning model. To start the server, enter the website directory and run ```python server.py```. THIS MODEL SHOULD NOT BE USED FOR MEDICAL DIAGNOSES.
+
 ## Dataset
 The dataset used for this neural network was part of the SIIM-ISIC Melanoma Classification prediction competition on Kaggle. The competition and data can be found here:
 https://www.kaggle.com/c/siim-isic-melanoma-classification/data
